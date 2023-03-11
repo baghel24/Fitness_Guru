@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page 3</title>
+</head>
+<style>
+   
+    form {border: 8px solid rgb(146, 216, 140);}
+    .content {
+      max-width: 450px;
+      margin: auto;
+      background: rgb(146, 216, 140);
+      padding: 1px;
+    }
+    input[type=text], input[type=password] {
+      width: 40%;
+      padding: 14px;
+      margin: 8px 20px;
+      display: inline-block;
+      border: 2px solid #ccc;
+      box-sizing: border-box;
+    }
+  
+    
+    .test{
+    height: 50px;
+    width:150px;
+    background-color: #047004;
+    color:aliceblue;
+    font-size: 16px;
+    border-color: #047004;
+}
+    span.psw {
+      float: right;
+      padding-top: 10px;
+    }
+    .header {
+            padding: 1px 1px;
+            /* background-color: rgb(243, 243, 243); */
+           }
+           body {margin:0;}
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+     
+    /* Simple CSS3 Fade-in-down Animation */
+    #formContent {
+      -webkit-border-radius: 10px 10px 10px 10px;
+      border-radius: 10px 10px 10px 10px;
+      background: #fff;
+      padding: 30px;
+      width: 100%;
+      max-width: 450px;
+      position: relative;
+      padding: 0px;
+      -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+      box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+      text-align: left;
+    }
+    .wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column; 
+      justify-content: center;
+      width: 100%;
+      min-height: 100%;
+      padding: 20px;
+    }
+   
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+        </style>
+<body>
+        <ul>
+          <li><img src="logo_image-removebg-preview.png" alt="image" width="90" align = "left" ></li>
+          <li><div class="header" id="myHeader">
+            <h1 style = "color: rgb(2, 104, 2); font-size: 40px; font-family:verdana;">
+                FITNESS GURU
+            </h1></div> </header></li>
+        </ul>
+        <div style="padding:20px;margin-top:30px;background-color:#cccccc;height:40px;"></div>
+        <div class="wrapper fadeInDown">
+          <div id="formContent">
+          <div class="content">
+      <form action="/action_page.php" method="post">
+      
+        <div class="container">
+          <label for="uname" style = "font-size: 30px;"><b>How tall you are?</b></label><br>
+          <input type="text" placeholder="Height(feet)" name="uname" required>
+          <input type="text" placeholder="Height(inches)" name="uname" required>
+          <label for="uname" style = "font-size: 30px;"><b>How much do you weigh?</b></label><br>
+          <input type="text" placeholder="Current Weight in kg." name="uname" required><br>
+          <label for="uname" style = "font-size: 30px;"><b>What's your goal weight?</b></label><br>
+          <input type="text" placeholder="Weight in kg." name="uname" required><hr>
+           
+          <button class="test" style = margin-right:90px onclick="window.location.href = 'index04.html';">Back</button>
+          <button class="test" style = margin-left:30px onclick="window.location.href = 'index06.html';">Next</button>
+         
+        </div>
+      </form>
+      </div></div></div>
+      </body>
+      </html>
